@@ -1,0 +1,378 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.5rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wrapper {
+  padding: 0 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.read_more {
+  text-align: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.read_more a {
+  padding: 1px;
+  position: relative;
+}
+
+.read_more a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.read_more a:hover::after {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  opacity: 0;
+}
+
+/* ----------------------
+header
+----------------------- */
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: #fff;
+}
+
+header h1 {
+  padding: 20px 0;
+}
+
+header nav {
+  background: #333;
+  color: #fff;
+}
+
+header nav ul {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav ul li {
+  margin-right: 60px;
+}
+
+header nav ul a {
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+/* ----------------------
+main_container
+----------------------- */
+#main_container {
+  position: relative;
+  top: 150px;
+  z-index: 0;
+}
+
+#main_container > .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* ----------------------
+pick_up
+----------------------- */
+#pickup article {
+  width: 32%;
+  margin-bottom: 70px;
+}
+
+#pickup article h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* ----------------------
+main
+----------------------- */
+main {
+  width: 65%;
+}
+
+main article h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+main article .meta {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+main article .meta a {
+  margin-left: 20px;
+}
+
+main article p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 16px 24px;
+}
+
+main article .read_more {
+  margin: 30px auto 100px;
+}
+
+/* ----------------------
+aside
+----------------------- */
+aside {
+  width: 32%;
+  padding: 20px;
+}
+
+aside #profile {
+  text-align: center;
+}
+
+aside #profile img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+aside #profile h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 50px 30px 30px;
+}
+
+aside #profile p {
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+aside #ranking {
+  margin: 80px 0;
+  text-align: center;
+}
+
+aside #ranking h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 50px 30px 30px;
+}
+
+aside #ranking li {
+  position: relative;
+}
+
+aside #ranking #rank_1::after {
+  font-weight: bold;
+  position: absolute;
+  background-color: #f7cf21;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  line-height: 1.5;
+  z-index: 10;
+  content: 'No. 1';
+}
+
+aside #ranking #rank_2::after {
+  font-weight: bold;
+  position: absolute;
+  background-color: #f7cf21;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  line-height: 1.5;
+  z-index: 10;
+  content: 'No. 2';
+}
+
+aside #ranking #rank_3::after {
+  font-weight: bold;
+  position: absolute;
+  background-color: #f7cf21;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  line-height: 1.5;
+  z-index: 10;
+  content: 'No. 3';
+}
+
+aside #ranking h4 {
+  margin: 10px 0 30px;
+  text-align: left;
+}
+
+aside #archive {
+  text-align: center;
+}
+
+aside #archive h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 50px 30px 30px;
+  border-bottom: 1px solid #777;
+}
+
+aside #archive li {
+  border-bottom: 1px solid #777;
+  padding: 20px;
+  text-align: left;
+}
+
+/* ----------------------
+footer
+----------------------- */
+footer {
+  position: relative;
+  top: 150px;
+  background-color: #f7f7f7;
+  line-height: 1.5;
+}
+
+footer h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 50px 0 30px;
+}
+
+footer .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+footer #copy {
+  padding: 10px;
+}
+
+footer #about {
+  width: 30%;
+}
+
+footer #about p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+
+footer #about a {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+footer #about a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #333;
+  border-width: 6px 0 6px 8px;
+}
+
+footer #menu {
+  width: 30%;
+}
+
+footer #menu h3 {
+  border-bottom: 1px solid #777;
+}
+
+footer #menu li {
+  padding: 15px;
+  border-bottom: 1px solid #777;
+}
+
+footer #twitter {
+  width: 30%;
+}
+
+footer p:last-child {
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  nav ul {
+    overflow-x: scroll;
+  }
+  #main_container .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main_container .flex article,
+  #main_container .flex main,
+  #main_container .flex aside {
+    width: 100%;
+  }
+  #main_container .flex aside {
+    padding: 0;
+  }
+  footer > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer > div #about,
+  footer > div #menu,
+  footer > div #twitter {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -8,92 +8,107 @@
   <meta name="description" content="texttexttext">
   <title>Blog</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <head>
-    <h1><a href="#"><img src="img/logo.svg" alt=""></a></h1>
+  <header>
     <div class="wrapper">
-      <nav>
-        <ul>
-          <li>NEW</li>
-          <li>COLUMN</li>
-          <li>SERIES</li>
-          <li>Q&A</li>
-          <li>CONTACT</li>
-        </ul>
-      </nav>
+      <h1><a href="#"><img src="img/logo.svg" alt=""></a></h1>
     </div>
-  </head>
+    
+    <nav>
 
-  <div class="wrapper">
+      <ul class="flex wrapper">
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">COLUMN</a></li>
+        <li><a href="#">SERIES</a></li>
+        <li><a href="#">Q&A</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="main_container" class="wrapper">
     <div id="pickup" class="flex">
       <article>
         <img src="img/1.jpg" alt="">
         <h2>タイトルテキストタイトルテキストタイトルテキストタイトルテキスト</h2>
+        <div class="read_more"><a href="#">READ MORE</a></div>
       </article>
       <article>
         <img src="img/2.jpg" alt="">
         <h2>タイトルテキストタイトルテキストタイトルテキストタイトルテキスト</h2>
+        <div class="read_more"><a href="#">READ MORE</a></div>
       </article>
       <article>
-        <img src="img/3.jpg" alt="">
+        <img src="img/6.jpg" alt="">
         <h2>タイトルテキストタイトルテキストタイトルテキストタイトルテキスト</h2>
+        <div class="read_more"><a href="#">READ MORE</a></div>
       </article>
     </div>
     <div class="flex">
       <main>
         <article>
           <h2>タイトルテキストタイトルテキストタイトルテキストタイトルテキスト</h2>
-          <div class="meta">2021.9.6 <a href="#">カテゴリ１</a></div>
+          <div class="meta">2021/9/6 <a href="#">カテゴリ１</a></div>
           <a href="#"><img src="img/4.jpg" alt=""></a>
           <p>
             本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
           </p>
-          <div><a href="#">READ MORE</a></div>
+          <div class="read_more"><a href="#">READ MORE</a></div>
         </article>
         <article>
           <h2>タイトルテキストタイトルテキストタイトルテキストタイトルテキスト</h2>
-          <div class="meta">2021.9.6 <a href="#">カテゴリ１</a></div>
+          <div class="meta">2021/9/6<a href="#">カテゴリ１</a></div>
           <a href="#"><img src="img/5.jpg" alt=""></a>
           <p>
             本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
           </p>
-          <div><a href="#">READ MORE</a></div>
+          <div class="read_more"><a href="#">READ MORE</a></div>
         </article>
         <article>
           <h2>タイトルテキストタイトルテキストタイトルテキストタイトルテキスト</h2>
-          <div class="meta">2021.9.6 <a href="#">カテゴリ１</a></div>
-          <a href="#"><img src="img/6.jpg" alt=""></a>
+          <div class="meta">2021/9/6<a href="#">カテゴリ１</a></div>
+          <a href="#"><img src="img/3.jpg" alt=""></a>
           <p>
             本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
           </p>
-          <div><a href="#">READ MORE</a></div>
+          <div class="read_more"><a href="#">READ MORE</a></div>
         </article>
       </main>
       <aside>
         <section id="profile">
           <img src="img/jin.png" alt="ジンくん">
-          <h3></h3>
-          <p></p>
+          <h3>ジンギスカンのジンくん</h3>
+          <p>
+            いつも食べられかけている。
+            にもかかわらず本人はいたって冷静。
+            「北海道でジンギスカンを食べた方々に、思い出とともに笑いを持ち帰ってほしい。」
+            という願いから誕生。
+            お土産としてもらった方にもぜひ微笑んでいただきたい。</p>
         </section>
         <section id="ranking">
           <h3>Ranking</h3>
           <ul>
-            <li>
+            <li id="rank_1">
               <img src="img/7.jpg" alt="">
-              <h4>タイトルテキストタイトルテキスト</h4>
+              <h4>タイトルテキストタイトルテキストタイトルテキスト</h4>
             </li>
-            <li>
+            <li id="rank_2">
               <img src="img/8.jpg" alt="">
               <h4>タイトルテキストタイトルテキスト</h4>
             </li>
-            <li>
+            <li id="rank_3">
               <img src="img/9.jpg" alt="">
-              <h4>タイトルテキストタイトルテキスト</h4>
+              <h4>タイトルテキストタイトルテキストタイトルテキスト</h4>
             </li>
           </ul>
         </section>
@@ -101,8 +116,6 @@
           <h3>Archive</h3>
           <ul>
             <li>XXXX年XX月(XX)</li>
-          </ul>
-          <ul>
             <li>XXXX年XX月(XX)</li>
             <li>XXXX年XX月(XX)</li>
             <li>XXXX年XX月(XX)</li>
@@ -124,33 +137,37 @@
     </div>
   </div>
   <footer>
-    <div class="wrapper">
+    <div class="wrapper flex">
       <section id="about">
         <h3>About</h3>
         <p>
           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
         </p>
         <ul>
-          <li>プロフィール詳細</li>
-          <li>お仕事の依頼</li>
-          <li>お問い合わせ</li>
+          <li><a href="#">プロフィール詳細</a></li>
+          <li><a href="#">お仕事の依頼</a></li>
+          <li><a href="#">お問い合わせ</a></li>
         </ul>
       </section>
-      <section id="Menu">
+      
+      <section id="menu">
+        <h3>Menu</h3>
         <ul>
-          <li>NEW</li>
-          <li>CATEGORY</li>
-          <li>COLUMN</li>
-          <li>SERIES</li>
-          <li>Q&A</li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">CATEGORY</a></li>
+          <li><a href="#">COLUMN</a></li>
+          <li><a href="#">SERIES</a></li>
+          <li><a href="#">Q&A</a></li>
         </ul>
       </section>
       <section id="twitter">
         <h3>Twitter</h3>
-        <div></div>
+        <div class="scroll"><a class="twitter-timeline"  data-height="300" href="https://twitter.com/jingisu_jin_inf?ref_src=twsrc%5Etfw">Tweets by jingisu_jin_inf</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </section>
     </div>
-    <p>&copy; Maru</p>
+    <p id="copy">&copy; Maru</p>
   </footer>
 </body>
 
